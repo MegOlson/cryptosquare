@@ -18,7 +18,7 @@ function encodeString(message) {
     return error;
   } else {
     var square = [];
-    var squareSides = Math.sqrt(message.length);
+    var squareSides = Math.ceil(Math.sqrt(message.length));
     for (var i = 0; i < squareSides; i++) {
       square.push([]);
     }
