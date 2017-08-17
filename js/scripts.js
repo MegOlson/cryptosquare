@@ -31,7 +31,11 @@ function encodeString(message) {
         index = 0;
       }
     });
-    console.log(square);
+    var results = ""
+    square.forEach(function(column) {
+      results +=  column.join("");
+    });
+    console.log(results);
     return message;
   }
 }
