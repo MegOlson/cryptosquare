@@ -49,6 +49,6 @@ $(document).ready(function() {
   $("#message").submit(function(event) {
   event.preventDefault();
   var message = $("input#message-input").val();
-  console.log(encodeString(message));
+  $("#result").text(encodeString(message));
   });
 });
