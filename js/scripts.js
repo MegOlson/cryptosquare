@@ -11,8 +11,15 @@ function cleanString(message) {
   return message;
 }
 
-
-
+function encodeString(message) {
+  message = cleanString(message);
+  var error = errorCheck(message);
+  if (error) {
+    return error;
+  } else {
+    return message;
+  }
+}
 
 
 // User Interface Logic
@@ -20,7 +27,6 @@ $(document).ready(function() {
   $("#message").submit(function(event) {
   event.preventDefault();
   var message = $("input#message-input").val();
-  console.log(message);
-  console.log(cleanString(message));
+  console.log(encodeString(message));
   });
 });
