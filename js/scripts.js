@@ -35,8 +35,11 @@ function encodeString(message) {
     square.forEach(function(column) {
       results +=  column.join("");
     });
-    console.log(results);
-    return message;
+    var splitResults = "";
+    for (var i = 0; i < results.length; i += 5) {
+      splitResults += results.slice(i, i + 5) + " ";
+    }
+    return splitResults;
   }
 }
 
