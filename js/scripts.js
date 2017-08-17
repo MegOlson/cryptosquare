@@ -17,6 +17,21 @@ function encodeString(message) {
   if (error) {
     return error;
   } else {
+    var square = [];
+    var squareSides = Math.sqrt(message.length);
+    for (var i = 0; i < squareSides; i++) {
+      square.push([]);
+    }
+    var messageArray = message.split("");
+    var index = 0;
+    messageArray.forEach(function(message) {
+      square[index].push(message);
+      index++;
+      if (index === squareSides) {
+        index = 0;
+      }
+    });
+    console.log(square);
     return message;
   }
 }
