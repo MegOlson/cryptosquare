@@ -1,0 +1,40 @@
+.jumbotron {
+  margin-top: 30px;
+  text-align: center;
+  background-color: rgba(242, 229, 213, .5);
+}
+.alert {
+  display: none;
+  text-align: center;
+  margin: 30px;
+}
+#result {
+  margin: 30px;
+  text-align: center;
+}
+body {
+  font-family: 'Special Elite', cursive;
+  background-image: url("../img/paper.jpg");
+  background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+  font-size: 25px;
+}
+.panel {
+  background-color: rgba(242, 229, 213, .5);
+}
+
+input[type="text"] {
+  font-size: 20px;
+}
+
+input.form-control {
+  line-height: 40px;
+  height: 45px;
+  padding: 5px 15px 0px 15px;
+}
+
+button.btn {
+  background-color: rgb(158, 134, 105);
+  font-size: 18px;
+}

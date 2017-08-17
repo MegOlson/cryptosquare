@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Cryptosquare</title>
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC|PT+Mono|Special+Elite|VT323" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -9,15 +10,25 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
-    <form id="message">
-      <div class="container">
-        <div class="form-group">
-          <label for="message">Enter a message</label>
-          <input type="text" id="message-input" class="form-control">
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Cryptosquare</h1>
+      </div>
+        <div class="panel">
+          <div class="panel-body">
+          <form id="message">
+            <div class="form-group">
+              <label for="message">Enter a message</label>
+              <input type="text" id="message-input" class="form-control">
+            </div>
+            <button type="submit" class="btn">Code my message</button>
+          </form>
+          <div id="result">
+          </div>
+          <div class="alert alert-danger" role="alert">
+            <strong>Uh oh! </strong>Please enter a valid message before hitting submit.
+          </div>
         </div>
-        <button type="submit" class="btn">Code my message</button>
-      </form>
-      <div id="result">
       </div>
     </div>
   </body>

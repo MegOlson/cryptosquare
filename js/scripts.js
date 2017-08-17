@@ -47,8 +47,14 @@ function encodeString(message) {
 // User Interface Logic
 $(document).ready(function() {
   $("#message").submit(function(event) {
-  event.preventDefault();
-  var message = $("input#message-input").val();
-  $("#result").text(encodeString(message));
+    event.preventDefault();
+    $(".alert").hide();
+    var message = $("input#message-input").val();
+    var codedMessage = encodeString(message);
+    if (codedMessage === "error: no input") {
+      $(".alert").show();
+    } else {
+      $("#result").text(encodeString(message));
+    }
   });
 });
